@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Quiz – Course Visualization Tool</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+<div class="page-content">
+
+<!-- ===================================== -->
+<!-- HEADER + NAVBAR -->
+<!-- ===================================== -->
+<header>
+  <div>
+    <!-- Hamburger icon -->
+    <a class="hamburger" href="#navbar">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+
+      <!-- Close icon -->
+      <a class="close" href="#">
+        <i class="fa-solid fa-xmark"></i>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================================== -->
+<!-- QUIZ SECTION -->
+<!-- ===================================== -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Find Your Program – Interactive Quiz</h2>
+  <p class="text-center">Test your knowledge and discover which program fits you best!</p>
+
+  <div class="quiz-area text-center p-4 border rounded">
+    <p>The 10-question quiz will appear here.</p>
+    <button id="startQuiz" class="btn btn-success">Start Quiz</button>
+  </div>
+</section>
+
+</div> <!-- end page-content -->
+
+<!-- ===================================== -->
+<!-- FOOTER -->
+<!-- ===================================== -->
+<footer class="text-center mt-5">
+  <p>&copy; 2026 Purdue University – School of Applied & Creative Computing</p>
+  <p>CIT 312 Final Project</p>
+</footer>
+
+</div> <!-- end page-wrapper -->
+
+<!-- ===================================== -->
+<!-- BOOTSTRAP JS -->
+<!-- ===================================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- QUIZ LOGIC -->
+<script src="js/quiz.js"></script>
+
+</body>
+</html>

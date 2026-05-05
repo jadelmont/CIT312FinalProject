@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School of Applied & Creative Computing - Course Visualization Tool</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Font Awesome (for hamburger menu) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Custom SCSS compiled to CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<!-- ===================================== -->
+<!-- HEADER + NAVBAR -->
+<!-- ===================================== -->
+<header>
+  <div>
+    <!-- Hamburger icon -->
+    <a class="hamburger" href="#navbar">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+
+      <!-- Close icon -->
+      <a class="close" href="#">
+        <i class="fa-solid fa-xmark"></i>
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+
+<!-- ===================================== -->
+<!-- HERO SECTION -->
+<!-- ===================================== -->
+<section class="hero text-center">
+  <h1>School of Applied & Creative Computing</h1>
+  <h2>Course Visualization Tool</h2>
+  <p>Explore Undergraduate Majors in Animation, Technology, Design, and More</p>
+</section>
+
+
+<!-- ===================================== -->
+<!-- PROGRAM CARDS GRID -->
+<!-- ===================================== -->
+<main class="container my-5" id="programs">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Program 1: Animation -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/animation.jpg" class="card-img-top" alt="Animation & Visual Effects">
+        <div class="card-body">
+          <h5 class="card-title">Animation & Visual Effects</h5>
+          <p class="card-text">Enhance entertainment and film videos by combining real and virtual actors and settings.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#animationModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program 2: CIT -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/cit.jpg" class="card-img-top" alt="Computer & Information Technology">
+        <div class="card-body">
+          <h5 class="card-title">Computer & Information Technology</h5>
+          <p class="card-text">Keep systems functioning efficiently and data safe as applications, databases, and networks are managed.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#citModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program 3: CINET -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/cinet.jpg" class="card-img-top" alt="Computing Infrastructure & Network Engineering Tech">
+        <div class="card-body">
+          <h5 class="card-title">Computing Infrastructure & Network Engineering Tech</h5>
+          <p class="card-text">Focus on high-level computer network design with hardware and software foundations to solve networking challenges.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cinetModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program 4: Cybersecurity -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/cybersecurity.jpg" class="card-img-top" alt="Cybersecurity">
+        <div class="card-body">
+          <h5 class="card-title">Cybersecurity</h5>
+          <p class="card-text">Learn to create and maintain secure networks and track down hackers who aim to breach that security.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cyberModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program 5: Data Analytics -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/data.jpg" class="card-img-top" alt="Data Analytics">
+        <div class="card-body">
+          <h5 class="card-title">Data Analytics</h5>
+          <p class="card-text">Leverage statistical and machine learning techniques to solve problems using database analytics approaches.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program 6: Game Development -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/gamedev.jpg" class="card-img-top" alt="Game Development">
+        <div class="card-body">
+          <h5 class="card-title">Game Development</h5>
+          <p class="card-text">Bring virtual worlds to life in industries including education, healthcare, science, and gaming.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gamedevModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program 7: Themed Entertainment -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/themed.jpg" class="card-img-top" alt="Themed Entertainment Design">
+        <div class="card-body">
+          <h5 class="card-title">Themed Entertainment Design</h5>
+          <p class="card-text">Build the future of theme parks, museums, and beyond with immersive experiences across digital and physical worlds.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#themedModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program 8: UX Design -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/ux.jpg" class="card-img-top" alt="UX Design">
+        <div class="card-body">
+          <h5 class="card-title">UX Design</h5>
+          <p class="card-text">Incorporate customer feedback to research end users’ needs and brainstorm solutions that help them navigate products.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uxModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program 9: Web Programming & Design -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/web.jpg" class="card-img-top" alt="Web Programming & Design">
+        <div class="card-body">
+          <h5 class="card-title">Web Programming & Design</h5>
+          <p class="card-text">Build secure, user-friendly web apps using PHP, MySQL, and ASP.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#webModal">View Courses</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ===================================== -->
+<!-- PROGRAM 1: ANIMATION MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="animationModal" tabindex="-1" aria-labelledby="animationLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="animationLabel">Animation & Visual Effects – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>CGT 11200 – Sketching For Visualization And Communication (3 cr)</li>
+          <li>CGT 11600 – Geometric Modeling For Visualization And Communication (3 cr)</li>
+          <li>CGT 11800 – Fundamentals Of Imaging Technology (3 cr)</li>
+          <li>CGT 12300 – Animation Foundations (3 cr)</li>
+          <li>CGT 14100 – Internet Foundations Technologies And Development (3 cr)</li>
+          <li>CGT 14700 – Visual Effects Introduction (3 cr)</li>
+          <li>CGT 17208 – User Experience Design Studio I: Fundamentals (3 cr)</li>
+          <li>CGT 20500 – Portfolio Review (0 cr)</li>
+          <li>CGT 24100 – Introduction To Computer Animation (3 cr)</li>
+          <li>CGT 25001 – Computer Graphics Professional Practices I (1 cr)</li>
+          <li>CGT 27000 – Introduction To Data Visualization (3 cr)</li>
+          <li>CGT 30505 – Portfolio II (0 cr)</li>
+          <li>CGT 40500 – Senior Portfolio Review (0 cr)</li>
+          <li>CGT 41101 – Contemporary Problems In Applied Computer Graphics I (2 cr)</li>
+          <li>CGT 41201 – Contemporary Problems In Applied Computer Graphics II (2 cr)</li>
+          <li>CGT 44200 – Production For Computer Animation (3 cr — taken twice for 6 cr total)</li>
+          <li>CGT 45001 – Computer Graphics Professional Practices II (1 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>3D Animator</li>
+          <li>VFX Artist</li>
+          <li>Motion Graphics Designer</li>
+          <li>Technical Artist</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================== -->
+<!-- PROGRAM 2: CIT MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="citModal" tabindex="-1" aria-labelledby="citLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="citLabel">Computer & Information Technology – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>CNIT 15501 – Introduction to Software Development Concepts (3 cr)</li>
+          <li>CNIT 17600 – Information Technology Architectures (3 cr)</li>
+          <li>CNIT 18000 – Introduction to Systems Development (3 cr)</li>
+          <li>CNIT 24200 – System Administration (3 cr)</li>
+          <li>CNIT 25501 – Object-Oriented Programming Introduction (3 cr)</li>
+          <li>CNIT 27000 – Cybersecurity Fundamentals I (3 cr)</li>
+          <li>CNIT 27200 – Database Fundamentals (3 cr)</li>
+          <li>CNIT 28000 – Systems Analysis and Design Methods (3 cr)</li>
+          <li>CNIT 32000 – Policy, Regulation, and Globalization in IT (3 cr)</li>
+          <li>CNIT 48000 – Managing Information Technology Projects (3 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>IT Support Specialist</li>
+          <li>Systems Administrator</li>
+          <li>Database Technician</li>
+          <li>IT Project Coordinator</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================== -->
+<!-- PROGRAM 3: CINET MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="cinetModal" tabindex="-1" aria-labelledby="cinetLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cinetLabel">Computing Infrastructure & Network Engineering Tech – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>CNIT 15501 – Introduction to Software Development Concepts (3 cr)</li>
+          <li>CNIT 17600 – Information Technology Architectures (3 cr)</li>
+          <li>CNIT 18000 – Introduction to Systems Development (3 cr) OR CNIT 18200 – System and Organizational Security (3 cr)</li>
+          <li>CNIT 24200 – System Administration (3 cr)</li>
+          <li>CNIT 25501 – Object-Oriented Programming Introduction (3 cr)</li>
+          <li>CNIT 27000 – Cybersecurity Fundamentals I (3 cr)</li>
+          <li>CNIT 27200 – Database Fundamentals (3 cr)</li>
+          <li>CNIT 31500 – Systems Programming (3 cr)</li>
+          <li>CNIT 34400 – Network Engineering Fundamentals (3 cr)</li>
+          <li>CNIT 32000 – Policy, Regulation, and Globalization in IT (3 cr) OR CNIT 37100 – Cyberlaw and Ethics (3 cr)</li>
+          <li>CNIT 34000 – UNIX Administration (3 cr)</li>
+          <li>CNIT 34220 – Network Administration (2–3 cr, 3 required)</li>
+          <li>CNIT 34500 – Internetwork Design and Implementation (3–4 cr, 3 required)</li>
+          <li>CNIT 34600 – Wireless Networks (3–4 cr, 3 required)</li>
+          <li>CNIT 45500 – Network Security (3 cr)</li>
+          <li>CNIT 48000 – Managing Information Technology Projects (3 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>Network Engineer</li>
+          <li>Infrastructure Specialist</li>
+          <li>Systems Administrator</li>
+          <li>Cloud Network Technician</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================== -->
+<!-- PROGRAM 4: CYBERSECURITY MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="cyberModal" tabindex="-1" aria-labelledby="cyberLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cyberLabel">Cybersecurity – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Computer & Information Technology Courses</h6>
+        <ul>
+          <li>CNIT 15501 – Introduction to Software Development Concepts (3 cr)</li>
+          <li>CNIT 17600 – Information Technology Architectures (3 cr)</li>
+          <li>CNIT 18200 – System and Organizational Security (3 cr)</li>
+          <li>CNIT 24200 – System Administration (3 cr)</li>
+          <li>CNIT 25501 – Object-Oriented Programming Introduction (3 cr)</li>
+          <li>CNIT 27000 – Cybersecurity Fundamentals I (3 cr)</li>
+          <li>CNIT 27200 – Database Fundamentals (3 cr)</li>
+          <li>CNIT 34000 – UNIX Administration (3 cr)</li>
+          <li>CNIT 34220 – Network Administration (2–3 cr, 3 required)</li>
+          <li>CNIT 34400 – Network Engineering Fundamentals (3 cr)</li>
+          <li>CNIT 48000 – Managing Information Technology Projects (3 cr)</li>
+        </ul>
+        <h6>Cybersecurity Courses</h6>
+        <ul>
+          <li>CNIT 27100 – Cybersecurity Fundamentals II (3 cr)</li>
+          <li>CNIT 37000 – Introduction to Cryptography (3 cr)</li>
+          <li>CNIT 37100 – Cyberlaw and Ethics (3 cr)</li>
+          <li>CNIT 32300 – Basic Cyberforensics (3 cr)</li>
+          <li>CNIT 42200 – Cyber Criminology (3 cr)</li>
+          <li>CNIT 45500 – Network Security (3 cr)</li>
+          <li>CNIT 47000 – Incident Response Management (3 cr)</li>
+          <li>CNIT 47100 – Vulnerability Analysis and Testing (3 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>Cybersecurity Analyst</li>
+          <li>Penetration Tester</li>
+          <li>Digital Forensics Specialist</li>
+          <li>Incident Response Technician</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================== -->
+<!-- PROGRAM 5: DATA ANALYTICS MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="dataModal" tabindex="-1" aria-labelledby="dataLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataLabel">Data Analytics – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Computer & Information Technology Core Courses</h6>
+        <ul>
+          <li>CNIT 15501 – Introduction to Software Development Concepts (3 cr)</li>
+          <li>CNIT 17600 – Information Technology Architectures (3 cr)</li>
+          <li>CNIT 18000 – Introduction to Systems Development (3 cr)</li>
+          <li>CNIT 24200 – System Administration (3 cr)</li>
+          <li>CNIT 25501 – Object-Oriented Programming Introduction (3 cr)</li>
+          <li>CNIT 27000 – Cybersecurity Fundamentals I (3 cr)</li>
+          <li>CNIT 28000 – Systems Analysis and Design Methods (3 cr)</li>
+          <li>CNIT 32000 – Policy, Regulation, and Globalization in IT (3 cr)</li>
+          <li>CNIT 48000 – Managing Information Technology Projects (3 cr)</li>
+        </ul>
+        <h6>DATA Core Courses</h6>
+        <ul>
+          <li>CNIT 27200 – Database Fundamentals (3 cr)</li>
+          <li>CNIT 32200 – Research Methodology and Design (3 cr)</li>
+          <li>CNIT 37200 – Database Programming (3 cr)</li>
+          <li>CNIT 39200 – Enterprise Data Management (3 cr)</li>
+          <li>CNIT 48200 – Six Sigma Data Quality for Continuous Improvement (3 cr)</li>
+          <li>CNIT 48300 – Applied Machine Learning (3 cr)</li>
+          <li>CNIT 48400 – Applications in Data Science (3 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>Data Analyst</li>
+          <li>Business Intelligence Specialist</li>
+          <li>Machine Learning Technician</li>
+          <li>Data Quality Analyst</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================== -->
+<!-- PROGRAM 6: GAME DEVELOPMENT MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="gamedevModal" tabindex="-1" aria-labelledby="gamedevLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="gamedevLabel">Game Development – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>CGT 10501 – Introduction to Games (3 cr)</li>
+          <li>CGT 11505 – Scripting and Computational Thinking (3 cr)</li>
+          <li>CGT 11600 – Geometric Modeling for Visualization and Communication (3 cr)</li>
+          <li>CGT 11800 – Fundamentals of Imaging Technology (3 cr)</li>
+          <li>CGT 14100 – Internet Foundations Technologies and Development (3 cr)</li>
+          <li>CGT 17208 – User Experience Design Studio I: Fundamentals (3 cr)</li>
+          <li>CGT 20500 – Portfolio Review (0 cr)</li>
+          <li>CGT 24500 – Game Development I: Core Skills and Technologies (3 cr)</li>
+          <li>CGT 25001 – Computer Graphics Professional Practices I (1 cr)</li>
+          <li>CGT 25500 – Game Development II: Design and Psychology (3 cr)</li>
+          <li>CGT 27000 – Introduction to Data Visualization (3 cr)</li>
+          <li>CGT 30505 – Portfolio II (0 cr)</li>
+          <li>CGT 36500 – Game Development Practicum (3 cr — taken twice for 6 cr total)</li>
+          <li>CGT 40500 – Senior Portfolio Review (0 cr)</li>
+          <li>CGT 41101 – Contemporary Problems in Applied Computer Graphics I (2 cr)</li>
+          <li>CGT 41201 – Contemporary Problems in Applied Computer Graphics II (2 cr)</li>
+          <li>CGT 45001 – Computer Graphics Professional Practices II (1 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>Game Designer</li>
+          <li>Gameplay Programmer</li>
+          <li>Level Designer</li>
+          <li>Technical Artist</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================== -->
+<!-- PROGRAM 7: THEMED ENTERTAINMENT MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="themedModal" tabindex="-1" aria-labelledby="themedLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="themedLabel">Themed Entertainment Design – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>CGT 11200 – Sketching for Visualization and Communication (3 cr)</li>
+          <li>CGT 11600 – Geometric Modeling for Visualization and Communication (3 cr)</li>
+          <li>CGT 11700 – Illustrating for Visualization and Communication (3 cr)</li>
+          <li>CGT 11800 – Fundamentals of Imaging Technology (3 cr)</li>
+          <li>CGT 12300 – Animation Foundations (3 cr)</li>
+          <li>CGT 14700 – Visual Effects Introduction (3 cr)</li>
+          <li>CGT 20400 – Introduction to Themed Attraction Design (3 cr)</li>
+          <li>CGT 20500 – Portfolio Review (0 cr)</li>
+          <li>CGT 25001 – Computer Graphics Professional Practices I (1 cr)</li>
+          <li>CGT 25100 – Principles of Creative Design (3 cr)</li>
+          <li>CGT 30505 – Portfolio II (0 cr)</li>
+          <li>CGT 31300 – Digital Painting I for Computer Graphics (3 cr)</li>
+          <li>CGT 31700 – Planning and Communicating Themed Attraction Design (3 cr)</li>
+          <li>CGT 32800 – Business of Themed Entertainment (3 cr)</li>
+          <li>CGT 36700 – Previsualization in Themed Entertainment (3 cr)</li>
+          <li>CGT 40500 – Senior Portfolio Review (0 cr)</li>
+          <li>CGT 40701 – Current and Future Trends in Themed Attraction Design (3 cr)</li>
+          <li>CGT 41101 – Contemporary Problems in Applied Computer Graphics I (2 cr)</li>
+          <li>CGT 44200 – Production for Computer Animation (3 cr)</li>
+          <li>CGT 45001 – Computer Graphics Professional Practices II (1 cr)</li>
+          <li>CGT Globalization Selective (3 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>Themed Attraction Designer</li>
+          <li>Experience Designer</li>
+          <li>Concept Artist</li>
+          <li>Previsualization Artist</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================== -->
+<!-- PROGRAM 8: UX DESIGN MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="uxModal" tabindex="-1" aria-labelledby="uxLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="uxLabel">UX Design – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>CGT 11800 – Fundamentals of Imaging Technology (3 cr)</li>
+          <li>CGT 14100 – Internet Foundations Technologies and Development (3 cr)</li>
+          <li>CGT 17207 – User Experience Design Experience Studio I (3 cr)</li>
+          <li>CGT 17208 – User Experience Design Studio I: Fundamentals (3 cr)</li>
+          <li>CGT 25001 – Computer Graphics Professional Practices I (1 cr)</li>
+          <li>CGT 27000 – Introduction to Data Visualization (3 cr)</li>
+          <li>CGT 27108 – User Experience Design Studio II: Screen (3 cr)</li>
+          <li>CGT 27207 – User Experience Design Experience Studio II (3 cr — must be taken twice)</li>
+          <li>CGT 27208 – User Experience Design Studio III: Cross-Channel (3 cr)</li>
+          <li>CGT 37108 – User Experience Design Studio IV: Strategy (3 cr)</li>
+          <li>CGT 37207 – User Experience Design Experience Studio III (3 cr — must be taken twice)</li>
+          <li>CGT 37208 – User Experience Design Studio V: Specialization (3 cr)</li>
+          <li>CGT 41101 – Contemporary Problems in Applied Computer Graphics I (2 cr)</li>
+          <li>CGT 41201 – Contemporary Problems in Applied Computer Graphics II (2 cr)</li>
+          <li>CGT 45001 – Computer Graphics Professional Practices II (1 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>UX Designer</li>
+          <li>UX Researcher</li>
+          <li>Interaction Designer</li>
+          <li>Product Designer</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================== -->
+<!-- PROGRAM 9: WEB PROGRAMMING & DESIGN MODAL -->
+<!-- ===================================== -->
+<div class="modal fade" id="webModal" tabindex="-1" aria-labelledby="webLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="webLabel">Web Programming & Design – Required Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>CGT 11505 – Scripting and Computational Thinking (3 cr)</li>
+          <li>CGT 11600 – Geometric Modeling for Visualization and Communication (3 cr)</li>
+          <li>CGT 11800 – Fundamentals of Imaging Technology (3 cr)</li>
+          <li>CGT 14100 – Internet Foundations Technologies and Development (3 cr)</li>
+          <li>CGT 17208 – User Experience Design Studio I: Fundamentals (3 cr)</li>
+          <li>CGT 25001 – Computer Graphics Professional Practices I (1 cr)</li>
+          <li>CGT 25300 – Front-End Web Development (3 cr)</li>
+          <li>CGT 35300 – Principles of Interactive and Dynamic Media (3 cr)</li>
+          <li>CGT 35600 – Web Programming, Development and Data Integration (3 cr)</li>
+          <li>CGT 37000 – Interactive Data Visualization (3 cr)</li>
+          <li>CGT 41101 – Contemporary Problems in Applied Computer Graphics I (2 cr)</li>
+          <li>CGT 41201 – Contemporary Problems in Applied Computer Graphics II (2 cr)</li>
+          <li>CGT 45001 – Computer Graphics Professional Practices II (1 cr)</li>
+          <li>CGT 45600 – Advanced Web Programming, Development and Data Integration (3 cr)</li>
+        </ul>
+        <h6>Career Paths</h6>
+        <ul>
+          <li>Front-End Developer</li>
+          <li>Full Stack Developer</li>
+          <li>Web Designer</li>
+          <li>Interactive Media Developer</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- FOOTER -->
+<!-- ===================================== -->
+<footer id="contact" class="text-center mt-5">
+  <p>&copy; 2026 Purdue University – School of Applied & Creative Computing</p>
+  <p>CIT 312 Final Project</p>
+</footer>
+
+
+<!-- ===================================== -->
+<!-- BOOTSTRAP JS BUNDLE -->
+<!-- ===================================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>

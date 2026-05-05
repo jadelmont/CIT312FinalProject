@@ -1,0 +1,243 @@
+// ==============================
+// VARIABLES
+// ==============================
+$primary-color: #cfb991;   // Purdue gold
+$secondary-color: #000000; // Purdue black
+$light-bg: #f8f9fa;
+$text-color: #212529;
+
+// ==============================
+// GLOBAL STYLES
+// ==============================
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $text-color;
+  background-color: $light-bg;
+  margin: 0;
+  padding: 0;
+}
+
+// ==============================
+// HEADER + NAVBAR
+// ==============================
+header {
+  background-color: $secondary-color;
+  height: 70px;
+  position: relative;
+}
+
+// Hamburger + close icons
+.hamburger, .close {
+  font-size: 2rem;
+  color: $primary-color;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: white;          // no blue hover
+    text-decoration: none; // no underline
+  }
+}
+
+.hamburger {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+// Nav menu hidden by default
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: $secondary-color;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+
+  ul {
+    list-style: none;
+    padding: 4rem 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      margin: 1.5rem 0;
+
+      a {
+        color: $primary-color;
+        font-size: 1.3rem;
+        text-decoration: none;
+
+        &:hover {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// When targeted (hamburger clicked)
+nav:target {
+  transform: translateX(0);
+}
+
+// ==============================
+// HERO SECTION
+// ==============================
+.hero {
+  background: linear-gradient(
+    135deg,
+    lighten($primary-color, 10%),
+    darken($primary-color, 8%)
+  );
+  color: $secondary-color;
+  padding: 4rem 1rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+}
+
+
+// ==============================
+// PROGRAM CARDS
+// ==============================
+.card {
+  border: 1px solid $secondary-color;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid $secondary-color;
+  }
+
+  .card-body {
+    padding: 1rem;
+    text-align: left;
+
+    // Align text + button perfectly
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .card-title {
+    color: $secondary-color;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    flex-grow: 1; // pushes button down
+  }
+
+  .btn-primary {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+// ==============================
+// FOOTER
+// ==============================
+footer {
+  background-color: $secondary-color; // black
+  color: $primary-color;              // gold
+  padding: 0.75rem 1rem 0.5rem 1rem;  // top | right | bottom | left
+  text-align: center;
+  border-top: 2px solid $primary-color;
+}
+
+
+// ==============================
+// RESPONSIVE BREAKPOINTS
+// ==============================
+
+// Desktop: menu narrower
+@media screen and (min-width: 650px) {
+  nav {
+    width: 300px;
+  }
+}
+
+// Mobile card adjustments
+@media screen and (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+}
+
+.quiz-area ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.quiz-area li {
+  margin: 0.25rem 0;
+}
+
+// Make footer stick to bottom on short pages
+html, body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+}
