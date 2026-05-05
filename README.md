@@ -1,7 +1,6 @@
 # Course Visualization Tool – Final Project  
 CIT 312 – Advanced Web Design  
-Jasly Delmonte
-Date: May 4, 2026
+Jasly Delmonte - Date: May 4, 2026
 
 ## 1. Project Overview
 The Course Visualization Tool is an interactive web application designed to showcase the nine undergraduate programs within Purdue University’s School of Applied & Creative Computing. The project uses Bootstrap, SCSS, semantic HTML, and JavaScript to create a professional, responsive, and accessible experience.
